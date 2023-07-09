@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">    
+    
+   <!--  this is our beans -->    
+   
+   <!-- Collection type how to inject -->
+   <!--List -->
+   
+   <bean class="com.springcore.collections.Emp" name="emp1">
+	   <property name="name" value="Radhe"></property>
+	   <property name="phones">
+		   <list>
+			   <value>889172</value>
+			   <value>889173</value>
+			   <value>889174</value>
+			   <value>889175</value>
+			   
+		   </list>
+	   </property>
+	     <property name="address">
+		   <set>
+			   <value>Delhi</value>
+			   <value>Launn</value>
+			   <value>Jammu</value>
+			   <value>Srinagar</value>   
+		  </set>
+	   </property>
+	   
+	    <property name="courses">
+		<map>
+			<entry key="java" value="2Months" />
+			<entry key="pyhton" value="3Months" />
+			<entry key="javaScript" value="6months"/>
+		</map>
+	   </property>
+	   
+	   
+   </bean>
+   
+    
+</beans>
+
+
